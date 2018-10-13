@@ -19,23 +19,37 @@ Try to come up with some reasonable hypotheses regarding POIs, state all assumpt
 The Solution
 
 Part I: Analyse and Visualize current Data
+
 Step1: Import all needed libraries including pandas, numpy, matplotlib, seaborn sns, datetime, mathematical operator etc.
+
 Step2: Read the request log file from the path using csv file readerand store it into a dataframe
+
 Step3: Collect the info from a dataframe
+
 Step5: Find the count of request logs per province
+
 Step6: Find the top number of request logs per city
+
 Problems found with data: Column header 'TimeSt' has an additional space at the begining, two POI locations has same latitude and longitude making the minimum distance calculation and allocation redundant for one.
 
 Part II: Clean and Analyse the data again
+
 Step7: Remove the fake request logs by the hypothesis that no two requests will happen within same minute and using duplicate drop principle to avaoid them.
+
 Step8: Find the count of request logs per province after removing fake request
+
 Step9: Find the number of top 5 request logs per city after fake request drop
 
 Part III: POI List and allocation
+
 Step10: Generate POI list as a dataframe with longitude and latitude values.
+
 Step11: Calculate the distance between all request locations and various POI locations and find shortest distance and allocate the minimum distance POI to the request log.
+
 Step12: Plot of mean distance of each POI to their respetive request logs.
+
 Step13: Plot of variane between wach Poi and request log.
 
 Part IV: Claculate density of each POI and come up with a mathematical model
+
 Step 14: Density of number of request under each POI and mathematical model
