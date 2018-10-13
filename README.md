@@ -1,5 +1,7 @@
 # Request-Logs
 Analyse the request log of a service/product offered by a company and generate meaning results
+
+
 Problems
 Cleanup: A sample dataset of request logs is given in data/DataSample.csv. We consider records that have identical geoinfo and timest as suspicious. Please clean up the sample dataset by filtering out those suspicious request records.
 Label: assign each request (from data/DataSample.csv) to one of the POI locations (from data/POIList.csv) that has minimum distance to the request location.
